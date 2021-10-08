@@ -25,7 +25,7 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://static.wikia.nocookie.net/rickandmorty/images/7/70/Rick_and_Morty_Season_1.jpg/revision/latest?cb=20161125224650",
+    img: "https://static.wikia.nocookie.net/rickandmorty/images/7/70/Rick_and_Morty_Season_1.jpg",
     title: "Rick and Morty",
   },
   {
@@ -42,5 +42,48 @@ export const categories = [
     id: 4,
     img: "https://coolthemestores.com/wp-content/uploads/2020/11/harry-potter-features.jpg",
     title: "Harry Potter",
+  },
+];
+
+export const popularProducts = [
+  {
+    id: 1,
+    img: "https://cdn.shopify.com/s/files/1/0318/2649/products/FIG-KAI-3964_02.jpg?v=1571443139",
+  },
+  {
+    id: 2,
+    img: "https://i.etsystatic.com/10383562/r/il/ebd00d/2467717463/il_794xN.2467717463_59cq.jpg",
+  },
+  {
+    id: 3,
+    img: "https://pbs.twimg.com/media/E6_WafnXMAELNyM.jpg",
+  },
+  {
+    id: 4,
+    img: "https://i.redd.it/7oro3fmpejv61.jpg",
+  },
+  {
+    id: 5,
+    img: "https://www.zbrushcentral.com/uploads/default/original/3X/6/4/6421ddc1a7d0ae6133f0ad5883ca28bc8e53406e.jpeg",
+  },
+  {
+    id: 6,
+    img: "https://cdnb.artstation.com/p/assets/images/images/013/528/429/large/eduardo-silva-carnage-color-views-04.jpg?1540013913",
+  },
+  {
+    id: 7,
+    img: "https://cdn.shopify.com/s/files/1/1144/1890/products/Koto-Defenders-Daredevil-Black-Suit-Statue-001.jpg?v=1571269593",
+  },
+  {
+    id: 8,
+    img: "https://cdna.artstation.com/p/assets/images/images/013/111/540/large/diego-marangoni-hulk-estatua-estudio-gris-07.jpg?1538097339",
+  },
+  {
+    id: 9,
+    img: "https://cdn.shopify.com/s/files/1/0208/4405/2580/products/f02_v01c_1024x1024@2x.jpg?v=1607483896",
+  },
+  {
+    id: 10,
+    img: "https://m.media-amazon.com/images/I/61By6ZPzDCL._AC_SL1000_.jpg",
   },
 ];
