@@ -86,10 +86,10 @@ const Footer = () => {
         <Logo>LowlyFans</Logo>
         <Desc>
           LowlyFans is a home for fan arts. These artworks are based on popular
-          works of fiction (such as books, movies, etc.) that is created by
+          works of fiction (such as books, movies, etc.) that are created by
           fans. It is usually unofficial drawings and other renderings of famous
-          characters but it can actually be anything; "Fan art isn't about
-          rules. It's about expressing yourself." — Jonathan Horn
+          characters but it can be anything; "Fan art isn't about rules. It's
+          about expressing yourself." — Jonathan Horn
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
@@ -121,11 +121,11 @@ const Footer = () => {
       <Right>
         <Title>Contact Us</Title>
         <ContactItem>
-          <Phone style={{marginRight:"10px"}} />
+          <Phone style={{ marginRight: "10px" }} />
           +972 5244 591 185
         </ContactItem>
         <ContactItem>
-          <MailOutlined style={{marginRight:"10px"}} />
+          <MailOutlined style={{ marginRight: "10px" }} />
           benakiva1991@gmail.com
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
