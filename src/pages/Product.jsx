@@ -1,3 +1,4 @@
+import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
@@ -38,6 +39,79 @@ const Price = styled.span`
   font-weight: 100;
   font-size: 40px;
 `;
+
+const FilterContainer = styled.div`
+  width: 50%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Filter = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const FilterTitle = styled.span`
+  font-style: 20px;
+  font-weight: 200;
+`;
+
+const FilterColor = styled.div`
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: ${(props) => props.color};
+  margin: 0px 5px;
+  cursor: pointer;
+`;
+
+const FilterSize = styled.select`
+  margin-left: 10px;
+  padding: 5px;
+`;
+
+const FilterSizeOption = styled.option``;
+
+const AddContainer = styled.div`
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const AmountContainer = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+`;
+
+const Amount = styled.span`
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px;
+`;
+
+const Button = styled.button`
+  padding: 15px;
+  border: 2px solid teal;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+
+  &:hover{
+    background-color: teal;
+    color: white;
+
+  }
+`;
+
 const Product = () => {
   return (
     <Container>
@@ -57,14 +131,28 @@ const Product = () => {
           <Price>$49.85</Price>
           <FilterContainer>
             <Filter>
+              <FilterTitle>Color</FilterTitle>
+              <FilterColor color="black" />
+              <FilterColor color="blue" />
+              <FilterColor color="gray" />
+            </Filter>
+            <Filter>
               <FilterTitle>Size</FilterTitle>
               <FilterSize>
-                <FilterSizeOption size='7"' />
-                <FilterSizeOption size='12"' />
-                <FilterSizeOption size='17"' />
+                <FilterSizeOption>7"</FilterSizeOption>
+                <FilterSizeOption>12"</FilterSizeOption>
+                <FilterSizeOption>17"</FilterSizeOption>
               </FilterSize>
             </Filter>
           </FilterContainer>
+          <AddContainer>
+            <AmountContainer>
+              <Remove />
+              <Amount>1</Amount>
+              <Add />
+            </AmountContainer>
+            <Button>Add To Cart</Button>
+          </AddContainer>
         </InfoContainer>
       </Wrapper>
       <Newsletter />
